@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+ 
+ <div id="egg"></div>
+ 
+ 
+ <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+ 
+ <script>
+  
+   $(function(){
+   $('#egg').on('focus mouseenter', function(){
+    $(this).css("background", "url(./img/walking-egg2.png)");
+   });
+});
+   
+</script>
+
+
+  
+</body>
+</html>

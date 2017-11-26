@@ -1,0 +1,37 @@
+body{
+  background-color: #fff;
+  overflow: hidden;
+}
+#egg{
+  position: absolute;
+  top: 10%;
+  left: -240px;
+  background: url(../img/walking-egg1.png); 
+  width: 240px;
+  height: 550px;
+  animation:  walk-spot 1s steps(6) infinite, 
+              walk 9s infinite cubic-bezier(0.55, 0.53, 0.54, 0.54);
+}
+
+.restart{
+  background: url(../img/walking-egg1.png);
+}
+
+/*
+#egg:hover{
+  background: url(../img/walking-egg2.png);
+}
+*/
+
+
+
+@keyframes walk-spot {
+  0%{background-position: 0px;}
+  100%{background-position: -1500px;}
+  
+}
+@keyframes walk{
+  0%{top: 10%; left: -240px;}
+  100%{top: 10%; left: 100vw;}
+}
+
